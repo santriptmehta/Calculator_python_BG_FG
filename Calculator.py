@@ -1,12 +1,12 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-
+# These are the global variables.
 val = ""
 A = 0
 operator = ""
 
-
+# Defined command of whole button used in the Calculator.
 def btn_1_isclicked():
     global val
     val = val + "1"
@@ -139,13 +139,13 @@ def result():
  
 
 
-     
+#calculator screen orientation     
 root = tkinter.Tk()
 root.geometry("250x400+300+300")
 root.resizable(0,0)
 root.title("Calculator")
 
-
+# these are the frame in which the button are designed
 data = StringVar()
 lbl = Label(
     root,
@@ -170,7 +170,7 @@ btnrow3.pack(expand = True, fill = "both")
 btnrow4 = Frame(root)
 btnrow4.pack(expand = True, fill = "both")
 
-
+# Button designed and its command
 btn1 = Button(
     btnrow1,
     text =  "1",
@@ -339,15 +339,6 @@ btn4 = Button(
     command = btn_div_clicked,
     )
 btn4.pack(side = LEFT, expand = True, fill = "both",)
-
-
-
-
-
-
-
-
-
 
 root.mainloop()
 
